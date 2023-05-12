@@ -52,7 +52,7 @@ Now run the CLI using your preferred package manager, and you will be prompted t
 
 ## Deploying
 
-To deploy your project, you will need to create a [Vercel](https://vercel.com) account. Once you have created your account, you can add the generated project from the CLI to your Github and follow these [instructions](https://vercel.com/docs/concepts/deployments/git/vercel-for-github) to deploy your project on the Vercel platform.
+To deploy your project, you will need to create a [Vercel](https://vercel.com) account. Once you have created your account, you can add the generated project from the CLI to your Github and follow these [instructions](https://vercel.com/docs/concepts/deployments/git/vercel-for-github) to deploy your project on the Vercel platform. You will also need to add the generated environment variables found in `.env.local` in your project to your Vercel project. You can do this by going to your project settings and adding them in the `Environment Variables` section.
 
 ## Usage of the Widget
 
