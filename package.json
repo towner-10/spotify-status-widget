@@ -1,0 +1,50 @@
+{
+    "name": "spotify-status-widget",
+    "type": "module",
+    "version": "0.0.1",
+    "description": "CLI to create an easy to deploy application to display your Spotify status anywhere",
+    "main": "src/index.ts",
+    "author": "Collin Town",
+    "license": "MIT",
+    "scripts": {
+        "start": "node dist/index.js",
+        "typecheck": "tsc",
+        "build": "tsup",
+        "dev": "tsup --watch"
+    },
+    "exports": "./dist/index.js",
+    "bin": {
+        "spotify-status-widget": "./dist/index.js"
+    },
+    "engines": {
+        "node": ">=14.16"
+    },
+    "keywords": [
+        "spotify-status-widget",
+        "spotify",
+        "status",
+        "widget",
+        "cli",
+        "next.js",
+        "typescript"
+    ],
+    "dependencies": {
+        "chalk": "4.1.2",
+        "commander": "^10.0.1",
+        "execa": "^7.1.1",
+        "fs-extra": "^11.1.1",
+        "gradient-string": "^2.0.2",
+        "inquirer": "^9.2.2",
+        "node-fetch": "^3.3.1",
+        "ora": "^6.3.0"
+    },
+    "devDependencies": {
+        "@types/fs-extra": "^11.0.1",
+        "@types/gradient-string": "^1.1.2",
+        "@types/inquirer": "^9.0.3",
+        "@types/node": "^20.1.2",
+        "prettier": "2.8.8",
+        "tsup": "^6.7.0",
+        "typescript": "^5.0.4"
+    }
+}
