@@ -6,6 +6,8 @@
     "main": "src/index.ts",
     "author": "Collin Town",
     "license": "MIT",
+    "repository": "https://github.com/towner-10/spotify-status-widget",
+    "homepage": "https://github.com/towner-10/spotify-status-widget#readme",
     "scripts": {
         "start": "node dist/index.js",
         "typecheck": "tsc",
