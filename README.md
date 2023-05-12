@@ -72,6 +72,14 @@ To deploy your project, you will need to create a [Vercel](https://vercel.com) a
 | `--spotifyClientId` | Your Spotify Client ID | `empty` |
 | `--spotifyClientSecret` | Your Spotify Client Secret | `empty` |
 
+## Roadmap
+
+- [x] Add CLI
+- [ ] Add more endpoints
+- [ ] Add more customization options (Themes, etc.)
+- [ ] Add more easy to use deployment options (Netlify, etc.)
+- [ ] Add more documentation
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
