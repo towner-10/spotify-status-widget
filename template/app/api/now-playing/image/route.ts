@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { getCurrentTrack } from '@/lib/spotify';
-import ImageGenerator from '@/lib/generate-image';
+import { createSpotifyImage } from '@/lib/generate-image';
 
 // Create a new image every 30 seconds.
 export const runtime = 'nodejs';
@@ -14,7 +14,7 @@ export async function GET() {
 
     // If the response has a track, generate an image.
     if (response.track) {
-        return new Response(await ImageGenerator.createSpotifyImage(response.track), {
+        return new Response(await createSpotifyImage(response.track), {
             headers: {
                 'Content-Type': 'image/png',
             },

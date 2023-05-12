@@ -9,7 +9,6 @@ interface CLIFlags {
     // General
     noGit: boolean;
     noInstall: boolean;
-    vercelCli: boolean;
 
     // Spotify
     spotifyClientId: string;
@@ -26,7 +25,6 @@ const defaultResults: CLIResults = {
     flags: {
         noGit: false,
         noInstall: false,
-        vercelCli: false,
         spotifyClientId: '',
         spotifyClientSecret: '',
     },
@@ -41,7 +39,6 @@ export const runCLI = async () => {
         .argument('[dir]', 'The name of the application, as well as the name of the directory to create it in.')
         .option('--noGit', 'Skip initializing a Git repository', defaultResults.flags.noGit)
         .option('--noInstall', 'Skip installing dependencies', defaultResults.flags.noInstall)
-        .option('--vercelCli', 'Use the Vercel CLI to deploy the app', defaultResults.flags.vercelCli)
         .option('--spotifyClientId <clientId>', 'Your Spotify client ID')
         .option('--spotifyClientSecret <clientSecret>', 'Your Spotify client secret')
         .parseAsync();
@@ -80,12 +77,6 @@ export const runCLI = async () => {
         } else {
             logger.info(`No worries. You can run '${pkgManager} install' later to install the dependencies.`);
         }
-    }
-
-    if (!results.flags.vercelCli) {
-        results.flags.vercelCli = await promptVercel();
-    } else {
-        logger.info("No worries. You can come back and run 'vercel' later to deploy your app.");
     }
 
     if (!results.flags.spotifyClientId) {
@@ -156,23 +147,6 @@ const promptInstall = async (): Promise<boolean> => {
     }
 
     return install;
-};
-
-const promptVercel = async (): Promise<boolean> => {
-    const { vercel } = await inquirer.prompt<{ vercel: boolean }>({
-        name: 'vercel',
-        type: 'confirm',
-        message: 'Would you like to use the Vercel CLI to deploy your app?',
-        default: true,
-    });
-
-    if (vercel) {
-        logger.success("Alright. We'll use the Vercel CLI to deploy your app!");
-    } else {
-        logger.info("No worries. You can come back and run 'vercel' later to deploy your app.");
-    }
-
-    return vercel;
 };
 
 const promptSpotifyId = async (): Promise<string> => {
