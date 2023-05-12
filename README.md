@@ -36,13 +36,17 @@ pnpm create spotify-status-widget@latest
 
 To setup the widget, you will need to create a Spotify application. You can do this by going to the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/applications) and creating a new application.
 
-![Create Spotify App](/assets/images/create-app-spotify.png)
+<p align="center">
+    <img src="./assets/images/create-app-spotify.png" alt="Create Spotify App" width="500" />
+</p>
 
 Once you have created your application, you will need to add your redirect URI. This is the URL that Spotify will redirect to after you have logged in. Set this as `http://localhost:3000` as this is something that the CLI will handle automatically.
 
 When the project is created you will be redirected to the Spotify App dashboard. Here you will need to navigate to the `Settings` page and copy your `Client ID` and `Client Secret`. You will need these to configure the CLI.
 
-![Spotify App Settings](/assets/images/create-app-spotify-settings.png)
+<p align="center">
+    <img src="./assets/images/create-app-spotify-settings.png" alt="Spotify App Settings" width="500" />
+</p>
 
 Now run the CLI using your preferred package manager, and you will be prompted to change some settings. The defaults are recommended, and you can always change them later. You will be prompted to enter the Client ID and Client Secret that you copied earlier. After this initial setup, a link will be created for you to follow, this will redirect you to login to Spotify and give your version of Spotify Status Widget access to your account. After you have logged in, you will be redirected to `http://localhost:3000` and you will see a page that says `Got the code, you may now close this window and return to the CLI!`. You can now close this window and return to your terminal. The CLI will now continue to generate your project. A few more options may popup in edge case scenarios, but after this, your project will be generated and you can start using it!
 
