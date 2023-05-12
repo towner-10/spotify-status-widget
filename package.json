@@ -1,5 +1,5 @@
 {
-    "name": "spotify-status-widget",
+    "name": "create-spotify-status-widget",
     "type": "module",
     "version": "0.0.1",
     "description": "CLI to create an easy to deploy application to display your Spotify status anywhere",
@@ -16,7 +16,7 @@
     },
     "exports": "./dist/index.js",
     "bin": {
-        "spotify-status-widget": "./dist/index.js"
+        "create-spotify-status-widget": "./dist/index.js"
     },
     "engines": {
         "node": ">=14.16"
