@@ -14,10 +14,7 @@
         "build": "tsup",
         "dev": "tsup --watch"
     },
-    "exports": "./dist/index.js",
-    "bin": {
-        "create-spotify-status-widget": "./dist/index.js"
-    },
+    "bin": "./dist/index.js",
     "engines": {
         "node": ">=14.16"
     },
