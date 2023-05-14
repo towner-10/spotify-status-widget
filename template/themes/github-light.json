@@ -1,0 +1,9 @@
+{
+    "name": "github-light",
+    "backgroundColor": "#ffffff",
+    "textColor": "#1f2328",
+    "progressColor": "#1f2328",
+    "shadowColor": "#1f2328",
+    "shadowBlur": 20,
+    "borderRadius": 30
+}

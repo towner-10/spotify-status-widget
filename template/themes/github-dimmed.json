@@ -1,0 +1,9 @@
+{
+    "name": "github-dimmed",
+    "backgroundColor": "#22272e",
+    "textColor": "#cdd9e5",
+    "progressColor": "#cdd9e5",
+    "shadowColor": "#cdd9e5",
+    "shadowBlur": 20,
+    "borderRadius": 30
+}

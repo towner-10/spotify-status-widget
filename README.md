@@ -59,7 +59,8 @@ To deploy your project, you will need to create a [Vercel](https://vercel.com) a
 | Endpoint | Description |
 | --- | --- |
 | `/api/now-playing` | Returns the current song that you are listening to. |
-| `/api/now-playing/image` | Returns the current song that you are listening to as an image. |
+| `/api/now-playing/image` | Returns the current song that you are listening to as an image with the default theme. |
+| `/api/now-playing/image/<theme>` | Returns the current song that you are listening to as an image with the specified theme. |
 
 *More to come.*
 
@@ -72,11 +73,19 @@ To deploy your project, you will need to create a [Vercel](https://vercel.com) a
 | `--spotifyClientId` | Your Spotify Client ID | `empty` |
 | `--spotifyClientSecret` | Your Spotify Client Secret | `empty` |
 
+## Themes
+
+| Theme | Preview |
+| --- | --- |
+| `default` / `github-dark` | <img src="./assets/images/github-dark-example.png" width="300" /> |
+| `github-light` | <img src="./assets/images/github-light-example.png" width="300" /> |
+| `github-dimmed` | <img src="./assets/images/github-dimmed-example.png" width="300" /> |
+
 ## Roadmap
 
 - [x] Add CLI
 - [ ] Add more endpoints
-- [ ] Add more customization options (Themes, etc.)
+- [ ] Add more theming options (currently only supports a few themes by default)
 - [ ] Add more easy to use deployment options (Netlify, etc.)
 - [ ] Add more documentation
 

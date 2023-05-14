@@ -1,7 +1,7 @@
 {
     "name": "create-spotify-status-widget",
     "type": "module",
-    "version": "1.0.3",
+    "version": "1.1.0",
     "description": "CLI to create an easy to deploy application to display your Spotify status anywhere",
     "main": "src/index.ts",
     "author": "Collin Town",
